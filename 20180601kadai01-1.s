@@ -17,10 +17,12 @@ loop:	add	$t1, $t1, $t0
 	add	$t1, $t1, 3
 	li	$v0, 4
 	la	$a0, ans
+	syscall
 	li	$v0, 1
 	move	$a0, $t1
 	syscall
 	li	$v0, 4
 	la	$a0, newln
+	syscall
 	jr	$ra
 	
